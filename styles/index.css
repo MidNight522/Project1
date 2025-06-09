@@ -1,6 +1,13 @@
 @import url(header/header.css);
+@import url(burger/burger.css);
+
+:root {
+  --blue-train: #0578ff;
+}
+
 * {
   box-sizing: border-box;
+  font-family: "Poppins";
 }
 
 body {
@@ -14,5 +21,5 @@ body {
 }
 
 .three-first-sections {
-  background: linear-gradient(#F5F5F5, #DDECFF, #F5F5F5);
-}/*# sourceMappingURL=index.css.map */
+  background: linear-gradient(#f5f5f5, #ddecff, #f5f5f5);
+} /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,31 @@
+.burger {
+  height: 909px;
+  position: fixed;
+  top: 99px;
+  width: 100%;
+  background-color: var(--blue-train);
+  transition: left 0.3s ease-in-out;
+}
+.burger__closed {
+  left: -100%;
+}
+.burger__opened {
+  left: 0;
+}
+.burger__container.container {
+  padding: 64px 20px;
+}
+.burger__list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+.burger__list li {
+  margin-bottom: 64px;
+}
+.burger__link {
+  font-size: 32px;
+  line-height: 27px;
+  color: #fff;
+  text-decoration: none;
+}/*# sourceMappingURL=burger.css.map */
