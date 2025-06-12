@@ -1,0 +1,81 @@
+.hero-form
+    &__label
+        display: block
+        font-size: 16px
+        font-weight: 600
+        margin-top: 24px
+    &__input
+        width: 100%
+        display: block
+        height: 53px
+        border-radius: 10px
+        padding: 16px 24px
+        margin-top: 16px
+        border: none
+        outline: none
+    .submit
+        background-color: var(--primary-blue-train)
+        border-radius: 10px
+        height: 62px
+        font-size: 20px
+        color: #fff
+        font-weight: 700
+        text-align: center
+        width: 100%
+        border: none
+        margin-top: 24px
+
+.trip-type
+    background: #fff
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-radius: 10px
+    height: 34px
+    padding: 3px 8px
+
+    label
+        font-size: 12px
+    
+    input
+        margin: 0 0 1px 0
+
+    .radio-wrapper
+        display: flex
+        align-items: center
+        gap: 6px
+
+    .counter
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 88px
+
+        font-size: 12px
+        font-weight: 500
+
+        button
+            background: none
+            border: none
+            font-size: 16px
+
+            &:last-child
+                color: var(--primary-blue)
+
+.calendar-input-wrapper
+    position: relative
+
+    &::before
+        display: block
+        position: absolute
+        width: 15.5px
+        height: 16px
+        left: 24px
+        top: 17.5px
+        content: ''
+        background-image: url(../../images/hero/Calendar.svg)
+        background-repeat: no-repeat
+        background-position: center
+        
+    input
+        padding-left: 52px                 

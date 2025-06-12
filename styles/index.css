@@ -1,8 +1,15 @@
 @import url(header/header.css);
 @import url(burger/burger.css);
-
+@import url(hero-form/hero-form.css);
+@import url(hero/hero.css);
+@import url(statistics/statistics.css);
+@import url(img/img.css);
+@import url(getApp/app.css);
 :root {
-  --blue-train: #0578ff;
+  --linear-gradient: linear-gradient(#f5f5f5, #ddecff, #f5f5f5);
+  --primary-blue-train: #0578ff;
+  --primary-blue: #0578FF;
+  --primary-black-train: #202020;
 }
 
 * {
@@ -15,11 +22,17 @@ body {
   display: block;
 }
 
+h2 {
+  color: var(--primary-black-train);
+  font-weight: bold;
+  font-size: 32px;
+}
+
 .container {
   width: 100%;
   padding: 0 20px;
 }
 
 .three-first-sections {
-  background: linear-gradient(#f5f5f5, #ddecff, #f5f5f5);
-} /*# sourceMappingURL=index.css.map */
+  background: var(--linear-gradient);
+}/*# sourceMappingURL=index.css.map */

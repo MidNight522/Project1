@@ -1,0 +1,27 @@
+.statistics {
+  background: var(--primary-blue-train);
+}
+.statistics-container.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 35.5px;
+  padding-bottom: 35.5px;
+}
+.statistics .cell {
+  width: 50%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.statistics .cell h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.statistics .cell p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+}/*# sourceMappingURL=statistics.css.map */

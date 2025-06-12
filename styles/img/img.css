@@ -1,0 +1,18 @@
+.images-container {
+  display: block;
+}
+.images-container img {
+  margin-bottom: 12px;
+  display: flex;
+  justify-self: center;
+}
+.images-container img:last-child {
+  margin-bottom: 64px;
+}
+
+.h2-img {
+  color: var(--primary-black-train);
+  margin-top: 64px;
+  font-size: 32px;
+  margin-bottom: 24px;
+}/*# sourceMappingURL=img.css.map */

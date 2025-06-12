@@ -3,7 +3,7 @@
   position: fixed;
   top: 99px;
   width: 100%;
-  background-color: var(--blue-train);
+  background-color: var(--primary-blue-train);
   transition: left 0.3s ease-in-out;
 }
 .burger__closed {

@@ -14,25 +14,180 @@
     <script src="/scripts/burger.js" defer></script>
   </head>
   <body>
-    <header class="header">
-      <div class="container header__container">
-        <img src="images/Nav/LogoSvg.svg" alt="" />
-        <button id="burger-opener" class="header__burger-button">
-          <img id="burger-icon" src="/images/Nav/Menu-open.png" alt="" />
-        </button>
+    <div class="three-first-sections">
+      <header class="header">
+        <div class="container header__container">
+          <img src="images/Nav/LogoSvg.svg" alt="" />
+          <button id="burger-opener" class="header__burger-button">
+            <img id="burger-icon" src="/images/Nav/Menu-open.png" alt="" />
+          </button>
+        </div>
+      </header>
+      <div id="burger" class="burger burger__closed">
+        <div class="container burger__container">
+          <nav>
+            <ul class="burger__list">
+              <li><a href="#mobile-app" class="burger__link">Mobile App</a></li>
+              <li><a href="#faq" class="burger__link">FAQs</a></li>
+              <li><a href="#contact" class="burger__link">Contact</a></li>
+              <li><a href="#sign-up" class="burger__link">Sign Up</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </header>
-    <div id="burger" class="burger burger__closed">
-      <div class="container burger__container">
-        <nav>
-          <ul class="burger__list">
-            <li><a href="#mobile-app" class="burger__link">Mobile App</a></li>
-            <li><a href="#faq" class="burger__link">FAQs</a></li>
-            <li><a href="#contact" class="burger__link">Contact</a></li>
-            <li><a href="#sign-up" class="burger__link">Sign Up</a></li>
-          </ul>
-        </nav>
-      </div>
+      <section class="hero">
+        <div class="container">
+          <h1>Skip the Climbing, Catch the Bus</h1>
+          <p>
+            We sell tickets to the best seats in the house – houses on wheels,
+            that is! Get ready for jaw-dropping views without breaking a sweat.
+          </p>
+
+          <form class="hero-form">
+            <div class="trip-type">
+              <div class="radio-wrapper">
+                <input
+                  type="radio"
+                  name="trip-type"
+                  id="round-trip"
+                  value="round-trip"
+                />
+                <label for="round-trip">Round trip</label>
+              </div>
+              <div class="radio-wrapper">
+                <input
+                  type="radio"
+                  name="trip-type"
+                  id="one-way-trip"
+                  value="one-way-trip"
+                />
+                <label for="one-way-trip">One Way</label>
+              </div>
+              <div class="counter">
+                <img src="/images/hero/person-solid.svg" alt="solid" />
+                <button id="trip-minus">-</button>
+                <span id="trip-count">1</span>
+                <button id="trip-plus">+</button>
+              </div>
+            </div>
+
+            <label for="departure" class="hero-form__label">Departure</label>
+            <input
+              id="departure"
+              class="hero-form__input"
+              placeholder="Your City/Station"
+            />
+            <label for="arrival" class="hero-form__label">Arrival</label>
+            <input
+              id="arrival"
+              class="hero-form__input"
+              placeholder="Where to?"
+            />
+            <label for="pick-your-lucky-day" class="hero-form__label"
+              >Pick your lucky day</label
+            >
+            <div class="calendar-input-wrapper">
+              <input
+                id="pick-your-lucky-day"
+                class="hero-form__input"
+                placeholder="depart"
+              />
+            </div>
+
+            <div class="calendar-input-wrapper">
+              <input
+                id="pick-your-lucky-day"
+                class="hero-form__input"
+                placeholder="return"
+              />
+            </div>
+            <button class="submit">Find My Alpine Ride</button>
+          </form>
+        </div>
+      </section>
+      <section class="statistics">
+        <div class="container statistics-container">
+          <div class="cell">
+            <h3>1.4M+</h3>
+            <p>Daily trains</p>
+          </div>
+          <div class="cell">
+            <h3>68k+</h3>
+            <p>Photos Taken</p>
+          </div>
+          <div class="cell">
+            <h3>165+</h3>
+            <p>Years of history</p>
+          </div>
+          <div class="cell">
+            <h3>23M+</h3>
+            <p>Altitude Gained</p>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <h2 class="h2-img">Glimpses of Glory</h2>
+        <div class="images-container">
+          <img
+            src="images/ImagePage/left-first.png"
+            alt="show-road"
+            width="320"
+            height="220"
+          />
+          <img
+            src="images/ImagePage/left-second.png"
+            alt="buss"
+            width="320"
+            height="209"
+          />
+          <img
+            src="images/ImagePage/right-first.png"
+            alt="mount"
+            width="320"
+            height="472"
+          />
+          <img
+            src="images/ImagePage/right-third.png"
+            alt="road1"
+            width="320"
+            height="637"
+          />
+          <img
+            src="images/ImagePage/right-second.png"
+            alt="road2"
+            width="320"
+            height="141"
+          />
+        </div>
+      </section>
+      <section class="app-download">
+        <div class="container app-download-container">
+          <h2>
+            <span>Free downloads</span> <br />
+            <span>app now!</span>
+          </h2>
+          <section class="download-section">
+            <img
+              src="images/downloads/Badges.png"
+              alt="Google Play"
+              width="167.85"
+              height="49.59"
+            />
+            <img
+              src="/images/downloads/HuaweiAPP.png"
+              alt="Huawei"
+              width="165.31"
+              height="49.59"
+            />
+            <img
+              src="/images/downloads/AppStore.png"
+              alt="AppStore"
+              width="148.36"
+              height="49.59"
+            />
+          </section>
+        </div>
+      </section>
     </div>
   </body>
 </html>
