@@ -3,8 +3,9 @@
 @import url(hero-form/hero-form.css);
 @import url(hero/hero.css);
 @import url(statistics/statistics.css);
-@import url(img/img.css);
-@import url(getApp/app.css);
+@import url(gallery/gallery.css);
+@import url(download-now/download-now.css);
+@import url(faq/faq.css);
 :root {
   --linear-gradient: linear-gradient(#f5f5f5, #ddecff, #f5f5f5);
   --primary-blue-train: #0578ff;

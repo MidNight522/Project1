@@ -1,0 +1,39 @@
+.FAQs
+    padding: 64px 0
+
+    h2
+        font-size: 64px
+    
+    .faq-header
+        display: flex
+        justify-content: space-between
+        height: 56px
+        align-items: center
+
+        h4
+            font-size: 18px
+            margin-top: 0
+            margin-bottom: 0
+            font-weight: 500
+            color: var(--primary-black-train)
+        
+        img
+            display: block
+            width: 13px
+            height: 13px
+            transition: transform .4s ease
+        
+    .faq-body
+        display: none
+
+        &-opened
+            display: block
+        p
+            font-size: 16px
+            line-height: 140%
+            margin-top: 0
+            margin-bottom: 0
+            color: var(--primary-black-train)
+
+.item-opened
+       transform: rotate(45deg)

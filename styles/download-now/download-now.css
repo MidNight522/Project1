@@ -1,0 +1,26 @@
+.download-now {
+  padding: 32px 0;
+  background-color: #FFC501;
+}
+.download-now h2 {
+  font-size: 32px;
+  max-width: 290px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.links-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.links-wrapper a {
+  height: 50px;
+  display: block;
+  margin: auto;
+}
+.links-wrapper a img {
+  height: 50px;
+}/*# sourceMappingURL=download-now.css.map */
