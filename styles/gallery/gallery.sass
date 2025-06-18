@@ -1,9 +1,45 @@
+@function setUniversalWidth($width)
+  @return calc($width / 1440 * 100vw)
+    
 .gallery
     padding: 64px 0px
 
     h2
         font-size: 32px
         color: var(--primary-black-train)
+
+    @media screen and (min-width: 576px)
+        &__elem
+            &_1
+                grid-area: 1 / 1 / 2 / 3
+            &_2
+                grid-area: 2 / 1 / 3 / 3
+                
+            &_3
+                grid-area: 3 / 1 / 4 / 2
+            &_4
+                grid-area: 3 / 2 / 4 / 3
+            &_5
+                grid-area: 4 / 1 / 5 / 3
+
+    @media screen and (min-width: 992px)
+        &__elem
+            &_1
+                grid-area: 1 / 1 / 3 / 2
+            &_2
+                grid-area: 3 / 1 / 5 / 2
+                
+            &_3
+                grid-area: 1 / 2 / 4 / 3
+            &_4
+                grid-area: 1 / 3 / 4 / 4
+            &_5
+                grid-area: 4 / 2 / 5 / 4
+
+
+
+
+                
 
 .gallery-wrapper
     display: grid
@@ -12,3 +48,22 @@
         img
             display: block
             width: 100%
+            @media screen and (min-width: 576px)
+                height: 100%
+                object-fit: cover
+                border-radius: 10px
+    
+    @media screen and (min-width: 576px)
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: 380px 362px 425px 225px
+        grid-column-gap: 24px
+        grid-row-gap: 24px
+
+    @media screen and (min-width: 992px)
+        justify-content: center
+        grid-template-columns: setUniversalWidth(528) setUniversalWidth(305) setUniversalWidth(416)
+        grid-template-rows: setUniversalWidth(376) setUniversalWidth(90) setUniversalWidth(264) 
+        grid-column-gap: 32px
+        grid-row-gap: 24px
+
+

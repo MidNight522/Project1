@@ -7,6 +7,12 @@
   padding-top: 35.5px;
   padding-bottom: 35.5px;
 }
+@media screen and (min-width: 576px) {
+  .statistics-container.container {
+    width: 520px;
+    margin: auto;
+  }
+}
 .statistics .cell {
   width: 50%;
   text-align: center;

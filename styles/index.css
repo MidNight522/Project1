@@ -6,6 +6,9 @@
 @import url(gallery/gallery.css);
 @import url(download-now/download-now.css);
 @import url(faq/faq.css);
+@import url(footer/contact-us/contact-us.css);
+@import url(footer/about/about.css);
+@import url(footer/footer-last/footer-last.css);
 :root {
   --linear-gradient: linear-gradient(#f5f5f5, #ddecff, #f5f5f5);
   --primary-blue-train: #0578ff;
@@ -32,6 +35,11 @@ h2 {
 .container {
   width: 100%;
   padding: 0 20px;
+}
+@media screen and (min-width: 576px) {
+  .container {
+    padding: 0 32px;
+  }
 }
 
 .three-first-sections {
