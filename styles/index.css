@@ -44,4 +44,12 @@ h2 {
 
 .three-first-sections {
   background: var(--linear-gradient);
+}
+
+@media screen and (min-width: 576px) {
+  h2 {
+    color: var(--primary-black-train);
+    font-weight: bold;
+    font-size: 64px;
+  }
 }/*# sourceMappingURL=index.css.map */

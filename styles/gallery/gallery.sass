@@ -3,10 +3,17 @@
     
 .gallery
     padding: 64px 0px
+    @media screen and (min-width: 576px)
+        padding: 128px 0px
+    
 
     h2
         font-size: 32px
         color: var(--primary-black-train)
+        @media screen and (min-width: 576px)
+            font-size: 64px
+            margin-top: 0px
+            margin-bottom: 24px
 
     @media screen and (min-width: 576px)
         &__elem

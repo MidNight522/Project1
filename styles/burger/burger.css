@@ -1,4 +1,5 @@
 .burger {
+  z-index: 10;
   height: 909px;
   position: fixed;
   top: 99px;

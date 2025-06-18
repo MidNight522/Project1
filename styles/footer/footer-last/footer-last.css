@@ -5,4 +5,12 @@
   font-weight: 600;
   text-align: center;
   padding-bottom: 64px;
+}
+@media screen and (min-width: 576px) {
+  .footer-last {
+    text-align: left;
+  }
+  .footer-last span {
+    display: block;
+  }
 }/*# sourceMappingURL=footer-last.css.map */

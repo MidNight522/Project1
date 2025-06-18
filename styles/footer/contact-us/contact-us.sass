@@ -1,6 +1,7 @@
 footer
     background: var(--primary-blue-train)
 .contact-us
+
     div
         text-align: center
         padding-top: 60px
@@ -12,11 +13,19 @@ footer
         position: relative
         top: -100px
 
+        @media screen and (min-width: 576px)
+            max-width: 464px
+            margin: auto
+
+
         
         h2
             margin: 0
             padding-bottom: 20px
             font-size: 36px
+            @media screen and (min-width: 576px)
+                font-size: 64px
+            
             
         h4
             margin: 0
@@ -24,10 +33,16 @@ footer
             font-size: 20px
             line-height: 140%
             font-weight: normal
+            @media screen and (min-width: 576px)
+                font-size: 28px
 
         .street
             padding-top: 30px
             padding-bottom: 60px
+            @media screen and (min-width: 576px)
+                font-size: 18px
+
+
     
        
 

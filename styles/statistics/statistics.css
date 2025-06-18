@@ -9,8 +9,8 @@
 }
 @media screen and (min-width: 576px) {
   .statistics-container.container {
-    width: 520px;
-    margin: auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 }
 .statistics .cell {
@@ -25,9 +25,19 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+@media screen and (min-width: 576px) {
+  .statistics .cell h3 {
+    font-size: 50px;
+  }
+}
 .statistics .cell p {
   font-size: 16px;
   font-weight: 500;
   margin-top: 0;
   margin-bottom: 0;
+}
+@media screen and (min-width: 576px) {
+  .statistics .cell p {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=statistics.css.map */
