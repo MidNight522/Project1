@@ -1,6 +1,7 @@
 .header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header__container.container {
   padding: 32.5px 20px;
@@ -8,4 +9,19 @@
 .header__burger-button {
   background: none;
   border: none;
+}
+.header__logo-block {
+  display: flex;
+  align-items: center;
+}
+.header .header__label {
+  display: none;
+  margin-left: 15px;
+  font-size: 34px;
+  font-weight: 350;
+}
+@media screen and (min-width: 576px) {
+  .header .header__label {
+    display: inline;
+  }
 }/*# sourceMappingURL=header.css.map */

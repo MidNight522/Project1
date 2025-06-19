@@ -33,10 +33,20 @@
     flex-direction: column
     justify-content: center
     gap: 30px
+
     @media screen and (min-width: 576px)
-        display: flex
-        flex-direction: row
-        justify-content: center
+        display: block
+        
+        .links-wrapper__elem_1
+            display: flex
+            justify-content: center
+            margin-bottom: 30px
+
+
+        .links-wrapper__elem_2
+            margin-left: 30px
+            margin-right: 49px
+
     @media screen and (min-width: 992px)
         display: flex
         flex-direction: row
@@ -45,13 +55,16 @@
     a
         height: 50px
         display: block
+        @media screen and (min-width: 576px)
+            display: inline
+
+
 
     a img 
         height: 50px
         @media screen and (min-width: 576px)
             height: 65px
 
-            
-            
+
 
   

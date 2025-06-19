@@ -2,6 +2,7 @@
     &__container
      display: flex
      justify-content: space-between
+     align-items: center
 
      &.container
         padding: 32.5px 20px
@@ -9,3 +10,15 @@
     &__burger-button
         background: none
         border: none
+    &__logo-block
+        display: flex
+        align-items: center
+    
+    .header__label
+        display: none
+        margin-left: 15px
+        font-size: 34px
+        font-weight: 350
+        
+        @media screen and (min-width: 576px)
+            display: inline

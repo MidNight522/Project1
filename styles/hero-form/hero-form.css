@@ -19,6 +19,11 @@
   border: none;
   outline: none;
 }
+@media screen and (min-width: 576px) {
+  .hero-form__input {
+    width: 50%;
+  }
+}
 .hero-form .submit {
   background-color: var(--primary-blue-train);
   border-radius: 10px;
