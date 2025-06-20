@@ -20,6 +20,12 @@ footer {
     top: -128px;
   }
 }
+@media screen and (min-width: 992px) {
+  .contact-us div {
+    max-width: 640px;
+    top: -185px;
+  }
+}
 .contact-us div h2 {
   margin: 0;
   padding-bottom: 20px;
