@@ -29,4 +29,10 @@
   line-height: 27px;
   color: #fff;
   text-decoration: none;
+}
+
+@media screen and (min-width: 992px) {
+  .burger, .header__burger-button {
+    display: none;
+  }
 }/*# sourceMappingURL=burger.css.map */

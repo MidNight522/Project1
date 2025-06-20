@@ -17,6 +17,7 @@ footer {
   .contact-us div {
     max-width: 464px;
     margin: auto;
+    top: -128px;
   }
 }
 .contact-us div h2 {

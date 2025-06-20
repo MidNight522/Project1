@@ -6,6 +6,10 @@
 
      &.container
         padding: 32.5px 20px
+        @media screen and (min-width: 576px)
+            padding: 32.5px 32px
+        @media screen and (min-width: 992px)
+            padding: 32.5px 64px
 
     &__burger-button
         background: none
@@ -22,3 +26,21 @@
         
         @media screen and (min-width: 576px)
             display: inline
+
+.desktop-nav
+    display: none
+
+    @media screen and (min-width: 992px)
+        display: block
+
+        .nav__list
+            display: flex
+            gap: 96px
+            list-style: none
+            margin: 0
+            padding: 0
+        .nav__link
+            font-size: 20px
+            text-decoration: none
+            color: var(--primary-black-train)
+            

@@ -22,11 +22,26 @@
             <img src="images/Nav/LogoSvg.svg" alt="" />
             <span class="header__label">Wonders</span>
           </div>
+          <!-- Desktop navigation -->
+          <nav class="desktop-nav">
+            <ul class="nav__list">
+              <li><a href="#mobile-app" class="nav__link">Mobile App</a></li>
+              <li><a href="#faq" class="nav__link">FAQs</a></li>
+              <li><a href="#contact" class="nav__link">Contact</a></li>
+              <li>
+                <a href="#sign-up" class="nav__link" style="font-weight: 700"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <!-- Burger button -->
           <button id="burger-opener" class="header__burger-button">
-            <img id="burger-icon" src="/images/Nav/Menu-open.png" alt="" />
+            <img id="burger-icon" src="/images/Nav/Menu-open.png" alt="menu" />
           </button>
         </div>
       </header>
+      <!-- Mobile burger menu -->
       <div id="burger" class="burger burger__closed">
         <div class="container burger__container">
           <nav>
@@ -39,73 +54,91 @@
           </nav>
         </div>
       </div>
+      <!-- Hero -->
       <section class="hero">
-        <div class="container">
-          <h1>Skip the Climbing, Catch the Bus</h1>
-          <p>
-            We sell tickets to the best seats in the house – houses on wheels,
-            that is! Get ready for jaw-dropping views without breaking a sweat.
-          </p>
-          <form class="hero-form">
-            <div class="trip-type">
-              <div class="radio-wrapper">
-                <input
-                  type="radio"
-                  name="trip-type"
-                  id="round-trip"
-                  value="round-trip"
-                />
-                <label for="round-trip">Round trip</label>
+        <div class="container hero__content-wrapper">
+          <div class="hero__content-left">
+            <h1>Skip the Climbing, Catch the Bus</h1>
+            <p>
+              We sell tickets to the best seats in the house – houses on wheels,
+              that is! Get ready for jaw-dropping views without breaking a
+              sweat.
+            </p>
+            <!-- Hero form -->
+            <form class="hero-form">
+              <div class="trip-type">
+                <div class="radio-wrapper">
+                  <input
+                    type="radio"
+                    name="trip-type"
+                    id="round-trip"
+                    value="round-trip"
+                  />
+                  <label for="round-trip">Round trip</label>
+                </div>
+                <div class="radio-wrapper">
+                  <input
+                    type="radio"
+                    name="trip-type"
+                    id="one-way-trip"
+                    value="one-way-trip"
+                  />
+                  <label for="one-way-trip">One Way</label>
+                </div>
+                <div class="counter">
+                  <img src="/images/hero/person-solid.svg" alt="solid" />
+                  <button id="trip-minus">-</button>
+                  <span id="trip-count">1</span>
+                  <button id="trip-plus">+</button>
+                </div>
               </div>
-              <div class="radio-wrapper">
-                <input
-                  type="radio"
-                  name="trip-type"
-                  id="one-way-trip"
-                  value="one-way-trip"
-                />
-                <label for="one-way-trip">One Way</label>
+              <div class="form-fields">
+                <div class="form-fields__departure">
+                  <label for="departure" class="hero-form__label"
+                    >Departure</label
+                  >
+                  <input
+                    id="departure"
+                    class="hero-form__input"
+                    placeholder="Your City/Station"
+                  />
+                </div>
+                <div class="form-fields__arrival">
+                  <label for="arrival" class="hero-form__label">Arrival</label>
+                  <input
+                    id="arrival"
+                    class="hero-form__input"
+                    placeholder="Where to?"
+                  />
+                </div>
+                <div class="form-fields__depart">
+                  <label for="pick-your-lucky-day" class="hero-form__label"
+                    >Pick your lucky day</label
+                  >
+                  <div class="calendar-input-wrapper">
+                    <input
+                      id="pick-your-lucky-day"
+                      class="hero-form__input"
+                      placeholder="Depart"
+                    />
+                  </div>
+                </div>
+                <div class="form-fields__return">
+                  <div class="calendar-input-wrapper">
+                    <input
+                      id="pick-your-lucky-day"
+                      class="hero-form__input"
+                      placeholder="Return"
+                    />
+                  </div>
+                </div>
               </div>
-              <div class="counter">
-                <img src="/images/hero/person-solid.svg" alt="solid" />
-                <button id="trip-minus">-</button>
-                <span id="trip-count">1</span>
-                <button id="trip-plus">+</button>
-              </div>
-            </div>
-
-            <label for="departure" class="hero-form__label">Departure</label>
-            <input
-              id="departure"
-              class="hero-form__input"
-              placeholder="Your City/Station"
-            />
-            <label for="arrival" class="hero-form__label">Arrival</label>
-            <input
-              id="arrival"
-              class="hero-form__input"
-              placeholder="Where to?"
-            />
-            <label for="pick-your-lucky-day" class="hero-form__label"
-              >Pick your lucky day</label
-            >
-            <div class="calendar-input-wrapper">
-              <input
-                id="pick-your-lucky-day"
-                class="hero-form__input"
-                placeholder="Depart"
-              />
-            </div>
-
-            <div class="calendar-input-wrapper">
-              <input
-                id="pick-your-lucky-day"
-                class="hero-form__input"
-                placeholder="Return"
-              />
-            </div>
-            <button class="submit">Find My Alpine Ride</button>
-          </form>
+              <button class="submit">Find My Alpine Ride</button>
+            </form>
+          </div>
+          <div class="hero__image">
+            <img src="/images/hero/hero.png" alt="House in the mounatin" />
+          </div>
         </div>
       </section>
       <section class="statistics">
@@ -187,26 +220,28 @@
           </div>
         </section>
         <section class="about">
-          <h2>
-            <img src="images/Nav/footer-vector.svg" alt="logo" />
-            <span>Wonders</span>
-          </h2>
-          <div class="links-wrapper">
-            <div class="links-wrapper__about">
+          <div class="h2-wrapper">
+            <h2>
+              <img src="images/Nav/footer-vector.svg" alt="logo" />
+              <span>Wonders</span>
+            </h2>
+          </div>
+          <div class="link-wrapper">
+            <div class="link-wrapper__about">
               <h3>About</h3>
               <a href="#">How it works</a>
               <a href="#">Featured</a>
               <a href="#">Partnership</a>
               <a href="#">Bussiness Relation</a>
             </div>
-            <div class="links-wrapper__community">
+            <div class="link-wrapper__community">
               <h3>Community</h3>
               <a href="#">Events</a>
               <a href="#">Blog</a>
               <a href="#">Podcast</a>
               <a href="#">Invite a friend</a>
             </div>
-            <div class="links-wrapper__socials">
+            <div class="link-wrapper__socials">
               <h3>Socials</h3>
               <a href="#">Discord</a>
               <a href="#">Instagram</a>

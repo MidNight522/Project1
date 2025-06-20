@@ -6,6 +6,16 @@
 .header__container.container {
   padding: 32.5px 20px;
 }
+@media screen and (min-width: 576px) {
+  .header__container.container {
+    padding: 32.5px 32px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header__container.container {
+    padding: 32.5px 64px;
+  }
+}
 .header__burger-button {
   background: none;
   border: none;
@@ -23,5 +33,26 @@
 @media screen and (min-width: 576px) {
   .header .header__label {
     display: inline;
+  }
+}
+
+.desktop-nav {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .desktop-nav {
+    display: block;
+  }
+  .desktop-nav .nav__list {
+    display: flex;
+    gap: 96px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .desktop-nav .nav__link {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--primary-black-train);
   }
 }/*# sourceMappingURL=header.css.map */

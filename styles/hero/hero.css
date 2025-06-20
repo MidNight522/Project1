@@ -1,11 +1,40 @@
 .hero {
   padding-bottom: 128px;
 }
+.hero__content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  .hero__content-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
+  }
+}
+.hero__content-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.hero__image {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .hero__image {
+    display: block;
+    flex: 1;
+  }
+  .hero__image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 .hero h1 {
   font-size: 32px;
   font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 @media screen and (min-width: 576px) {
   .hero h1 {

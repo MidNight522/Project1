@@ -13,6 +13,11 @@
     padding-bottom: 64px;
   }
 }
+@media screen and (min-width: 992px) {
+  .statistics-container.container {
+    flex-wrap: nowrap;
+  }
+}
 .statistics .cell {
   width: 50%;
   text-align: center;

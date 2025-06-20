@@ -41,6 +41,11 @@ h2 {
     padding: 0 32px;
   }
 }
+@media screen and (min-width: 992px) {
+  .container {
+    padding: 64px;
+  }
+}
 
 .three-first-sections {
   background: var(--linear-gradient);
