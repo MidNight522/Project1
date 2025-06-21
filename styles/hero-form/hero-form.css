@@ -3,6 +3,9 @@
     max-width: 640px;
   }
 }
+.hero-form .form-fields {
+  position: relative;
+}
 @media screen and (min-width: 576px) {
   .hero-form .form-fields {
     display: grid;
@@ -10,6 +13,7 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 24px;
     grid-row-gap: 32px;
+    position: relative;
   }
   .hero-form .form-fields__departure {
     grid-area: 1/1/2/2;
@@ -121,4 +125,32 @@
 }
 .calendar-input-wrapper input {
   padding-left: 52px;
+}
+
+.form-img {
+  display: none;
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 0;
+  z-index: 5;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 576px) {
+  .form-img {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .form-img {
+    max-width: 600px;
+  }
+}
+.form-img.visible {
+  display: block;
+}
+
+.form-fields__departure, .form-fields__depart, .form-fields__return {
+  position: relative;
 }/*# sourceMappingURL=hero-form.css.map */

@@ -2,12 +2,14 @@
     @media screen and (min-width: 576px)
         max-width: 640px
     .form-fields
+        position: relative
         @media screen and (min-width: 576px)
             display: grid
             grid-template-columns: repeat(2, 1fr)
             grid-template-rows: repeat(2, 1fr)
             grid-column-gap: 24px
             grid-row-gap: 32px
+            position: relative
 
             &__departure
                 grid-area: 1 / 1 / 2 / 2
@@ -109,4 +111,25 @@
         background-position: center
         
     input
-        padding-left: 52px                 
+        padding-left: 52px      
+
+.form-img
+    display: none
+    position: absolute
+    top: calc(100% + 12px) // чуть ниже input
+    left: 0
+    z-index: 5
+    width: auto
+    max-width: 100%
+    height: auto
+    @media screen and (min-width: 576px)
+        max-width: 480px
+
+    @media screen and (min-width: 992px)
+        max-width: 600px
+
+    &.visible
+        display: block           
+
+.form-fields__departure, .form-fields__depart, .form-fields__return
+    position: relative

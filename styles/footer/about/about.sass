@@ -2,12 +2,21 @@
     padding-bottom: 40px
     color: #fff
     background: var(--primary-blue-train)
+    &__content
+        display: block
+
+        @media screen and (min-width: 992px)
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+            gap: 80px
     .link-wrapper
         display: grid
         grid-template-columns: repeat(2, 1fr)
-        grid-template-rows: repeat(2, 1fr)
+        // grid-template-rows: repeat(2, 1fr)
         grid-column-gap: 40px
         grid-row-gap: 0px
+        margin: 0px
 
         &__about
             grid-area: 1 / 1 / 2 / 2
@@ -38,23 +47,28 @@
         font-weight: normal
         @media screen and (min-width: 576px)
             padding-top: 100px
+        @media screen and (min-width: 992px)
+            padding: 0px
+            margin: 0px
         
     
     h3
         font-size: 20px
         font-weight: normal
-        padding-bottom: 20px
+        padding-bottom: 25px
+        @media screen and (min-width: 992px)
+            margin: 0px
         
     
     a
         color: #fff
         text-decoration: none
-        font-weight: 400
+        font-weight: 300
         display: grid
-        padding-bottom: 35px
+        padding-bottom: 25px
 
     
     span
         color: #fff
+    
 
-        

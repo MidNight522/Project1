@@ -11,8 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <script src="/scripts/burger.js" defer></script>
-    <script src="/scripts/faq.js" defer></script>
   </head>
   <body>
     <!-- Three first sections -->
@@ -100,10 +98,17 @@
                   <label for="departure" class="hero-form__label"
                     >Departure</label
                   >
+                  <img
+                    src="/images/hero/Example.png"
+                    class="form-img"
+                    id="img-departure"
+                    alt="departure"
+                  />
                   <input
                     id="departure"
                     class="hero-form__input"
                     placeholder="Your City/Station"
+                    data-img="img-departure"
                   />
                 </div>
                 <div class="form-fields__arrival">
@@ -119,19 +124,35 @@
                     >Pick your lucky day</label
                   >
                   <div class="calendar-input-wrapper">
+                    <img
+                      src="/images/hero/Date Picker.png"
+                      class="form-img"
+                      id="img-calendar-desktop"
+                      alt="calendar"
+                    />
                     <input
-                      id="pick-your-lucky-day"
+                      id="depart-date"
                       class="hero-form__input"
                       placeholder="Depart"
+                      data-img-desktop="img-calendar-desktop"
+                      data-img-mobile="img-calendar-mobile"
                     />
                   </div>
                 </div>
                 <div class="form-fields__return">
                   <div class="calendar-input-wrapper">
+                    <img
+                      src="/images/hero/Date Picker Mobile.png"
+                      class="form-img"
+                      id="img-calendar-mobile"
+                      alt="calendar"
+                    />
                     <input
-                      id="pick-your-lucky-day"
+                      id="return-date"
                       class="hero-form__input"
                       placeholder="Return"
+                      data-img-desktop="img-calendar-desktop"
+                      data-img-mobile="img-calendar-mobile"
                     />
                   </div>
                 </div>
@@ -271,5 +292,8 @@
         </section>
       </div>
     </footer>
+    <script src="/scripts/burger.js"></script>
+    <script src="/scripts/faq.js"></script>
+    <script src="/scripts/form.js"></script>
   </body>
 </html>
