@@ -1,45 +1,56 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const inputs = document.querySelectorAll(".hero-form__input");
-  const images = document.querySelectorAll(".form-img");
+const inputs = document.querySelectorAll(".hero-form__input");
+const images = document.querySelectorAll(".form-img");
 
-  function showImage(input) {
-    const isMobile = window.innerWidth < 576;
+// Получить ID картинки по input'у
+function getTargetImageId(input) {
+  const isMobile = window.innerWidth < 576;
 
-    // скрываем все картинки
-    images.forEach((img) => img.classList.remove("visible"));
+  const directImg = input.dataset.img;
+  const desktopImg = input.dataset.imgDesktop;
+  const mobileImg = input.dataset.imgMobile;
 
-    // выбираем нужную по data-атрибутам
-    const directImg = input.dataset.img;
-    const desktopImg = input.dataset.imgDesktop;
-    const mobileImg = input.dataset.imgMobile;
+  if (directImg) return directImg;
+  if (desktopImg && mobileImg) return isMobile ? mobileImg : desktopImg;
 
-    let targetId = null;
+  return null;
+}
 
-    if (directImg) {
-      targetId = directImg;
-    } else if (desktopImg && mobileImg) {
-      targetId = isMobile ? mobileImg : desktopImg;
-    }
+// Hide img
+function hideAllImages() {
+  images.forEach((img) => img.classList.remove("visible"));
+}
 
-    if (targetId) {
-      const target = document.getElementById(targetId);
-      if (target) target.classList.add("visible");
-    }
-  }
+// Show correct img
+function showImageForInput(input) {
+  hideAllImages();
 
-  function hideAllImages() {
-    images.forEach((img) => img.classList.remove("visible"));
-  }
+  const targetId = getTargetImageId(input);
+  if (!targetId) return;
 
-  // при фокусе — показываем нужную картинку
+  const targetImg = document.getElementById(targetId);
+  if (targetImg) targetImg.classList.add("visible");
+}
+
+// Input Listener
+function setupInputListeners() {
   inputs.forEach((input) => {
-    input.addEventListener("focus", () => showImage(input));
+    input.addEventListener("focus", () => showImageForInput(input));
   });
+}
 
-  // при клике вне формы — скрываем всё
-  document.addEventListener("click", (e) => {
-    if (!e.target.closest(".hero-form")) {
+// Hide img click out of form
+function setupClickOutsideToHideImages() {
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest(".hero-form")) {
       hideAllImages();
     }
   });
-});
+}
+
+// Init
+function initImageLogic() {
+  setupInputListeners();
+  setupClickOutsideToHideImages();
+}
+
+initImageLogic();

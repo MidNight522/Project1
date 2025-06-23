@@ -19,6 +19,11 @@
 * {
   box-sizing: border-box;
   font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+#contact {
+  scroll-margin-top: 100px;
 }
 
 body {
@@ -57,4 +62,24 @@ h2 {
     font-weight: bold;
     font-size: 64px;
   }
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3 ease;
+}
+a:hover {
+  color: white;
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+button, .submit {
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+button:hover, .submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  opacity: 0.95;
 }/*# sourceMappingURL=index.css.map */

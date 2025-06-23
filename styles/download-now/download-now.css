@@ -52,6 +52,11 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .links-wrapper .links-wrapper__elem_1 {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 992px) {
   .links-wrapper {
     display: flex;
     flex-direction: row;
