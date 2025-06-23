@@ -1,5 +1,9 @@
 const inputs = document.querySelectorAll(".hero-form__input");
 const images = document.querySelectorAll(".form-img");
+const roundTripRadio = document.getElementById("round-trip");
+const oneWayRadio = document.getElementById("one-way-trip");
+const returnInput = document.getElementById("return-date");
+const returnWrapper = returnInput.closest(".form-fields__return");
 
 // Получить ID картинки по input'у
 function getTargetImageId(input) {
@@ -53,4 +57,19 @@ function initImageLogic() {
   setupClickOutsideToHideImages();
 }
 
+// Radio button
+function updateReturnState() {
+  if (oneWayRadio.checked) {
+    returnInput.disabled = true;
+    returnWrapper.classList.add("disabled");
+  } else {
+    returnInput.disabled = false;
+    returnWrapper.classList.remove("disabled");
+  }
+}
+roundTripRadio.addEventListener("change", updateReturnState);
+oneWayRadio.addEventListener("change", updateReturnState);
+
+// Init
 initImageLogic();
+updateReturnState();
