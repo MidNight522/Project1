@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Website</title>
     <link rel="stylesheet" href="/styles/index.css" />
+    <!-- Poppins Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- Flatpickr CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr" defer></script>
+    <!-- Scripts JS -->
     <script src="/scripts/burger.js" defer></script>
     <script src="/scripts/faq.js" defer></script>
     <script src="/scripts/form.js" defer></script>
     <script src="/scripts/footerEvent.js" defer></script>
     <script src="scripts/counter.js" defer></script>
+    <script src="/scripts/autocomplete.js" defer></script>
   </head>
   <body>
     <!-- Three first sections -->
@@ -104,18 +114,13 @@
                   <label for="departure" class="hero-form__label"
                     >Departure</label
                   >
-                  <img
-                    src="/images/hero/Example.png"
-                    class="form-img"
-                    id="img-departure"
-                    alt="departure"
-                  />
+
                   <input
                     id="departure"
                     class="hero-form__input"
                     placeholder="Your City/Station"
-                    data-img="img-departure"
                   />
+                  <div id="departure-list" class="autocomplete-list"></div>
                 </div>
                 <div class="form-fields__arrival">
                   <label for="arrival" class="hero-form__label">Arrival</label>
@@ -124,41 +129,26 @@
                     class="hero-form__input"
                     placeholder="Where to?"
                   />
+                  <div id="arrival-list" class="autocomplete-list"></div>
                 </div>
                 <div class="form-fields__depart">
                   <label for="pick-your-lucky-day" class="hero-form__label"
                     >Pick your lucky day</label
                   >
                   <div class="calendar-input-wrapper">
-                    <img
-                      src="/images/hero/Date Picker.png"
-                      class="form-img"
-                      id="img-calendar-desktop"
-                      alt="calendar"
-                    />
                     <input
                       id="depart-date"
                       class="hero-form__input"
                       placeholder="Depart"
-                      data-img-desktop="img-calendar-desktop"
-                      data-img-mobile="img-calendar-mobile"
                     />
                   </div>
                 </div>
                 <div class="form-fields__return">
                   <div class="calendar-input-wrapper">
-                    <img
-                      src="/images/hero/Date Picker Mobile.png"
-                      class="form-img"
-                      id="img-calendar-mobile"
-                      alt="calendar"
-                    />
                     <input
                       id="return-date"
                       class="hero-form__input"
                       placeholder="Return"
-                      data-img-desktop="img-calendar-desktop"
-                      data-img-mobile="img-calendar-mobile"
                     />
                   </div>
                 </div>
@@ -166,8 +156,13 @@
               <button class="submit" type="button">Find My Alpine Ride</button>
             </form>
           </div>
+          <!-- Hero img -->
           <div class="hero__image">
-            <img src="/images/hero/hero.png" alt="House in the mounatin" />
+            <img
+              style="position: relative"
+              src="/images/hero/hero.png"
+              alt="House in the mounatin"
+            />
           </div>
         </div>
       </section>

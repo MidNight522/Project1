@@ -61,7 +61,7 @@ function initClickListeners() {
 
   Array.from(faqItemWrappers).forEach((element, index) => {
     element.addEventListener("click", function (event) {
-      if (event.srcElement.className === "faq-header") {
+      if (element.contains(event.target)) {
         currentActiveIndex = index;
 
         Array.from(faqItemWrappers).forEach((item, jindex) => {

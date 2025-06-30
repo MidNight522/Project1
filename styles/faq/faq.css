@@ -15,6 +15,7 @@
   justify-content: space-between;
   height: 56px;
   align-items: center;
+  cursor: pointer;
 }
 .FAQs .faq-header h4 {
   font-size: 18px;
@@ -45,4 +46,9 @@
 
 .item-opened {
   transform: rotate(45deg);
+}
+
+.faq-item-wrapper {
+  border-bottom: 1px solid #202020;
+  padding: 16px 0;
 }/*# sourceMappingURL=faq.css.map */
